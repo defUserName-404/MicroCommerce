@@ -1,3 +1,14 @@
 spring:
   application:
     name: customer-service
+  data:
+    mongodb:
+      username: ${DB_USERNAME}
+      password: ${DB_PASSWORD}
+      host: localhost
+      port: 27017
+      database: customer
+      authentication-database: admin
+      
+server:
+  port: 8090
